@@ -1,4 +1,9 @@
+import "../components/postsList.js";
+import "../components/header.js";
+import "../components/footer.js";
+
 export default () => /*html*/`
-    <h1>Blog</h1>
-    <p>Lets load articles from DummyJSON</p>
+    <header-list></header-list>
+    <posts-list></posts-list>
+    <footer-list></footer-list>
 `;

@@ -16,6 +16,12 @@
     font-family: "Montserrat";
 }
 
+header {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
 body {
     color: var(--neutral);
     padding: 1rem clamp(1.5rem, 6vw, 3rem);
@@ -44,6 +50,28 @@ p {
     margin-bottom: 2rem;
 }
 
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
 click-counter button {
     font-weight: 600;
     border: 2px solid var(--neutral);
@@ -56,17 +84,20 @@ click-counter button {
     place-items: center;
     transition: opacity .1s, background-color .1s;
 }
+
 click-counter button:active {
     background-color: var(--secondary-light);
 }
 
-@media (min-width: 1000px)  {
+@media (min-width: 1000px) {
     click-counter button {
         cursor: pointer;
     }
+
     click-counter button:hover {
         background-color: var(--secondary-light);
     }
+
     click-counter button:active {
         opacity: .7;
     }

@@ -1,11 +1,13 @@
 import home from "./js/views/home.js";
 import products from "./js/views/products.js";
 import blog from "./js/views/blog.js";
+import user from "./js/views/users.js";
 
 const routes = {
     "/": { title: "Home", render: home },
     "/products": { title: "Products", render: products },
     "/blog": { title: "Contact", render: blog },
+    "/user": { title: "User", render: user },
 };
 
 function router() {
